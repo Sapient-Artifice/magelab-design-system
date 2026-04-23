@@ -26,6 +26,14 @@ This maps Tailwind theme tokens onto the existing design-system variables, so ut
 - `shadow-lg`
 - `font-mono`
 
+For a lightweight local smoke test of the adapter in this repo:
+
+```bash
+npm run dev:tailwind-demo
+```
+
+Then open `/tailwind-demo/`.
+
 ## Tailwind v3
 
 Use the preset export:

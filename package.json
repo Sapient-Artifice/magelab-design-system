@@ -50,6 +50,7 @@
     "check": "node scripts/check-exports.mjs",
     "release:check": "npm run build:tokens && npm run check && npm run build:catalog && npm pack --dry-run --cache ./.npm-cache",
     "dev": "node scripts/serve-static.mjs . 4173",
+    "dev:tailwind-demo": "node scripts/serve-static.mjs . 4175",
     "preview": "node scripts/serve-static.mjs dist 4174"
   }
 }

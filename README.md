@@ -47,6 +47,14 @@ npm run dev
 
 Then open `/catalog/` on the local server.
 
+Run the Tailwind adapter demo:
+
+```bash
+npm run dev:tailwind-demo
+```
+
+Then open `/tailwind-demo/` on the local server.
+
 Build a shareable static review output:
 
 ```bash

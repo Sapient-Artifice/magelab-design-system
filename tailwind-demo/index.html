@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Magelab Tailwind Adapter Demo</title>
+    <link rel="stylesheet" href="../src/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @import "../tailwind/theme.css";
+    </style>
+  </head>
+  <body class="bg-background text-foreground">
+    <main class="min-h-screen px-6 py-16">
+      <div class="mx-auto flex max-w-6xl flex-col gap-12">
+        <header class="flex flex-col gap-5">
+          <p class="ml-eyebrow">Tailwind Adapter Demo</p>
+          <h1 class="text-5xl font-semibold tracking-[-0.04em] text-white">
+            Tailwind utilities mapped onto Magelab tokens.
+          </h1>
+          <p class="max-w-3xl text-base leading-relaxed text-gray-300">
+            This page verifies the optional Tailwind adapter layer without changing the core design-system workflow.
+            The base design system CSS is loaded normally, and the Tailwind v4 browser compiler reads
+            <code>@magelab/design-system/tailwind/theme.css</code>-equivalent tokens from the local adapter.
+          </p>
+        </header>
+
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="ml-surface-card ml-card ml-surface-interactive ml-surface-light-subtle">
+            <p class="ml-eyebrow">Core CSS</p>
+            <h2 class="ml-heading-card">Shared recipe classes</h2>
+            <p class="ml-text-muted">
+              This side uses the framework-agnostic <code>ml-*</code> recipes directly.
+            </p>
+            <div class="ml-action-row" style="justify-content: flex-start;">
+              <a class="ml-button ml-button-primary ml-button-glow" href="../catalog/">Open catalog</a>
+              <a class="ml-button ml-button-secondary" href="../docs/tailwind.md">Tailwind docs</a>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-white/6 bg-white/2 p-8 text-foreground transition-colors hover:bg-white/4 hover:border-white/10">
+            <p class="font-mono text-xs uppercase tracking-eyebrow text-gray-400">Tailwind utilities</p>
+            <h2 class="mt-6 text-2xl font-semibold tracking-[-0.02em] text-white">Same tokens through Tailwind</h2>
+            <p class="mt-3 max-w-xl text-sm leading-relaxed text-gray-400">
+              This side uses utilities like <code>bg-mage-600</code>, <code>rounded-2xl</code>, <code>font-mono</code>,
+              and <code>text-gray-400</code> mapped by the adapter.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a class="inline-flex h-11 items-center justify-center rounded-md bg-mage-600 px-8 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-mage-500" href="../catalog/">
+                Open catalog
+              </a>
+              <a class="inline-flex h-11 items-center justify-center rounded-md border border-white/40 bg-white/20 px-8 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-white/30" href="../docs/tailwind.md">
+                Tailwind docs
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid gap-6 lg:grid-cols-3">
+          <article class="bg-gray-950 p-8 transition-all hover:bg-gray-900/50">
+            <div class="mb-6 text-gray-400 transition-colors duration-300 hover:text-white">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-none stroke-current stroke-[1.8]">
+                <path d="M4 7h16"></path>
+                <path d="M7 12h10"></path>
+                <path d="M10 17h4"></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-base font-semibold tracking-[-0.01em] text-white">Feature-card tone</h3>
+            <p class="text-sm leading-relaxed text-gray-400">
+              Subtle dark shell, restrained hover, and Magelab token colors through Tailwind classes.
+            </p>
+          </article>
+
+          <article class="bg-gray-950 p-8 transition-all hover:bg-gray-900/50">
+            <p class="mb-4 font-mono text-xs uppercase tracking-[0.12em] text-gray-400">Pricing</p>
+            <div class="mb-3 flex items-baseline gap-2">
+              <span class="text-4xl font-semibold text-white">$149</span>
+              <span class="text-sm text-gray-400">/month</span>
+            </div>
+            <p class="mb-8 text-sm text-gray-400">Tailwind-accessible token palette with the same Magelab scale.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-sm text-gray-400">
+                <span class="mt-0.5 inline-flex h-4 w-4 items-center justify-center text-mage-400">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current stroke-2">
+                    <path d="M9 12.75 11.25 15 15 9.75"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </span>
+                Shared product patterns
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-400">
+                <span class="mt-0.5 inline-flex h-4 w-4 items-center justify-center text-mage-400">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current stroke-2">
+                    <path d="M9 12.75 11.25 15 15 9.75"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </span>
+                Optional adapter layer
+              </li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-gray-950 p-8 shadow-lg">
+            <p class="font-mono text-xs uppercase tracking-eyebrow text-gray-400">Token smoke test</p>
+            <dl class="mt-6 grid gap-4 text-sm">
+              <div class="flex items-center justify-between gap-4 border-b border-white/6 pb-4">
+                <dt class="text-gray-400">Brand</dt>
+                <dd class="text-mage-400">`text-mage-400`</dd>
+              </div>
+              <div class="flex items-center justify-between gap-4 border-b border-white/6 pb-4">
+                <dt class="text-gray-400">Radius</dt>
+                <dd class="text-white">`rounded-2xl`</dd>
+              </div>
+              <div class="flex items-center justify-between gap-4 border-b border-white/6 pb-4">
+                <dt class="text-gray-400">Shadow</dt>
+                <dd class="text-white">`shadow-lg`</dd>
+              </div>
+              <div class="flex items-center justify-between gap-4">
+                <dt class="text-gray-400">Mono tracking</dt>
+                <dd class="font-mono text-white">`tracking-eyebrow`</dd>
+              </div>
+            </dl>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
