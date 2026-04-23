@@ -41,7 +41,7 @@ export function Hero() {
           <a className="ml-button ml-button-primary ml-button-glow" href="/download">Download Mage</a>
           <a className="ml-button ml-button-secondary" href="/gateway">Try the Gateway</a>
         </div>
-        <a className="ml-link-accent ml-link-arrow" href="/docs">
+        <a className="ml-link-neutral ml-link-arrow" href="/docs">
           Read the docs <span data-ml-arrow aria-hidden="true">&rarr;</span>
         </a>
       </div>
@@ -78,7 +78,7 @@ Then consume it from Svelte markup:
       <a class="ml-button ml-button-primary ml-button-glow" href="/download">Download Mage</a>
       <a class="ml-button ml-button-secondary" href="/gateway">Try the Gateway</a>
     </div>
-    <a class="ml-link-accent ml-link-arrow" href="/docs">
+    <a class="ml-link-neutral ml-link-arrow" href="/docs">
       Read the docs <span data-ml-arrow aria-hidden="true">&rarr;</span>
     </a>
   </div>

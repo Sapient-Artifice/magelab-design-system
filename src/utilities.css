@@ -171,6 +171,17 @@
   color: var(--ml-color-mage-300);
 }
 
+.ml-link-neutral {
+  color: var(--ml-color-gray-400);
+  text-decoration: none;
+  transition: color var(--ml-duration-fast) var(--ml-ease-emphasized);
+}
+
+.ml-link-neutral:hover,
+.ml-link-neutral:focus-visible {
+  color: var(--ml-color-foreground);
+}
+
 .ml-link-arrow {
   display: inline-flex;
   align-items: center;
@@ -406,6 +417,17 @@
   color: var(--ml-color-foreground);
 }
 
+.ml-icon-chip svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .ml-card-hover-title {
   transition: color var(--ml-duration-fast) var(--ml-ease-emphasized);
 }
@@ -582,6 +604,37 @@
   min-height: 100%;
   padding: var(--ml-space-8);
   background: var(--ml-color-gray-950);
+}
+
+.ml-pricing-card-web {
+  padding: var(--ml-space-8);
+}
+
+@media (min-width: 64rem) {
+  .ml-pricing-card-web {
+    padding: 2.5rem;
+  }
+}
+
+.ml-pricing-list-web {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ml-pricing-list-web > li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.ml-pricing-list-web .ml-feature-check {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
+  color: var(--ml-color-gray-500);
 }
 
 .ml-pricing-card-featured {
