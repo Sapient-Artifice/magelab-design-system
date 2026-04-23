@@ -1,0 +1,92 @@
+:root {
+  color-scheme: dark;
+
+  /* Typography */
+  --ml-font-sans: Inter, "Segoe UI", sans-serif;
+  --ml-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --ml-font-accent: Georgia, "Times New Roman", serif;
+
+  /* Core palette */
+  --ml-color-background: #09090b;
+  --ml-color-foreground: #fafafa;
+
+  --ml-color-gray-50: #fafafa;
+  --ml-color-gray-100: #f4f4f5;
+  --ml-color-gray-200: #e4e4e7;
+  --ml-color-gray-300: #d4d4d8;
+  --ml-color-gray-400: #a1a1aa;
+  --ml-color-gray-500: #71717a;
+  --ml-color-gray-600: #52525b;
+  --ml-color-gray-700: #3f3f46;
+  --ml-color-gray-800: #27272a;
+  --ml-color-gray-900: #18181b;
+  --ml-color-gray-950: #09090b;
+
+  --ml-color-mage-50: #f5f3ff;
+  --ml-color-mage-100: #ede9fe;
+  --ml-color-mage-200: #ddd6fe;
+  --ml-color-mage-300: #c4b5fd;
+  --ml-color-mage-400: #a78bfa;
+  --ml-color-mage-500: #8b5cf6;
+  --ml-color-mage-600: #7c3aed;
+  --ml-color-mage-700: #6d28d9;
+  --ml-color-mage-800: #5b21b6;
+  --ml-color-mage-900: #4c1d95;
+
+  --ml-color-success: #10b981;
+  --ml-color-warning: #f59e0b;
+  --ml-color-error: #ef4444;
+
+  /* Semantic surfaces */
+  --ml-color-card: #121217;
+  --ml-color-card-foreground: var(--ml-color-foreground);
+  --ml-color-popover: #121217;
+  --ml-color-popover-foreground: #e4e4e7;
+  --ml-color-primary: var(--ml-color-mage-500);
+  --ml-color-primary-foreground: #fafafa;
+  --ml-color-secondary: #18181b;
+  --ml-color-secondary-foreground: #d4d4d8;
+  --ml-color-muted: #18181b;
+  --ml-color-muted-foreground: #a1a1aa;
+  --ml-color-accent: rgba(255, 255, 255, 0.08);
+  --ml-color-accent-foreground: #e4e4e7;
+  --ml-color-destructive: #ef4444;
+  --ml-color-border: rgba(255, 255, 255, 0.08);
+  --ml-color-input: rgba(255, 255, 255, 0.1);
+  --ml-color-ring: var(--ml-color-mage-500);
+
+  /* Radius */
+  --ml-radius-sm: 0.375rem;
+  --ml-radius-md: 0.5rem;
+  --ml-radius-lg: 0.625rem;
+  --ml-radius-xl: 0.875rem;
+  --ml-radius-2xl: 1.125rem;
+  --ml-radius-3xl: 1.375rem;
+
+  /* Spacing */
+  --ml-space-1: 0.25rem;
+  --ml-space-2: 0.5rem;
+  --ml-space-3: 0.75rem;
+  --ml-space-4: 1rem;
+  --ml-space-5: 1.25rem;
+  --ml-space-6: 1.5rem;
+  --ml-space-8: 2rem;
+  --ml-space-10: 2.5rem;
+  --ml-space-12: 3rem;
+  --ml-space-16: 4rem;
+  --ml-space-20: 5rem;
+  --ml-space-24: 6rem;
+
+  /* Shadows */
+  --ml-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.18);
+  --ml-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.24);
+  --ml-shadow-lg: 0 20px 60px -15px rgba(0, 0, 0, 0.8);
+  --ml-shadow-glow: 0 0 32px 6px rgba(139, 92, 246, 0.3),
+    0 0 64px 8px rgba(139, 92, 246, 0.15);
+
+  /* Motion */
+  --ml-ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
+  --ml-duration-fast: 160ms;
+  --ml-duration-base: 240ms;
+  --ml-duration-slow: 400ms;
+}
