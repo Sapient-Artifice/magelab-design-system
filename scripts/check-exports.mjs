@@ -6,6 +6,8 @@ const files = [
   "src/base.css",
   "src/utilities.css",
   "src/effects.css",
+  "tailwind/theme.css",
+  "tailwind/preset.js",
   "src/tokens.json",
   "tokens/tokens.source.json",
   "assets/favicon.ico",

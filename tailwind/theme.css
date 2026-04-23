@@ -1,0 +1,65 @@
+@theme inline {
+  --color-background: var(--ml-color-background);
+  --color-foreground: var(--ml-color-foreground);
+
+  --color-gray-50: var(--ml-color-gray-50);
+  --color-gray-100: var(--ml-color-gray-100);
+  --color-gray-200: var(--ml-color-gray-200);
+  --color-gray-300: var(--ml-color-gray-300);
+  --color-gray-400: var(--ml-color-gray-400);
+  --color-gray-500: var(--ml-color-gray-500);
+  --color-gray-600: var(--ml-color-gray-600);
+  --color-gray-700: var(--ml-color-gray-700);
+  --color-gray-800: var(--ml-color-gray-800);
+  --color-gray-900: var(--ml-color-gray-900);
+  --color-gray-950: var(--ml-color-gray-950);
+
+  --color-mage-50: var(--ml-color-mage-50);
+  --color-mage-100: var(--ml-color-mage-100);
+  --color-mage-200: var(--ml-color-mage-200);
+  --color-mage-300: var(--ml-color-mage-300);
+  --color-mage-400: var(--ml-color-mage-400);
+  --color-mage-500: var(--ml-color-mage-500);
+  --color-mage-600: var(--ml-color-mage-600);
+  --color-mage-700: var(--ml-color-mage-700);
+  --color-mage-800: var(--ml-color-mage-800);
+  --color-mage-900: var(--ml-color-mage-900);
+
+  --color-primary: var(--ml-color-primary);
+  --color-primary-foreground: var(--ml-color-primary-foreground);
+  --color-secondary: var(--ml-color-secondary);
+  --color-secondary-foreground: var(--ml-color-secondary-foreground);
+  --color-muted: var(--ml-color-muted);
+  --color-muted-foreground: var(--ml-color-muted-foreground);
+  --color-accent: var(--ml-color-accent);
+  --color-accent-foreground: var(--ml-color-accent-foreground);
+  --color-card: var(--ml-color-card);
+  --color-card-foreground: var(--ml-color-card-foreground);
+  --color-popover: var(--ml-color-popover);
+  --color-popover-foreground: var(--ml-color-popover-foreground);
+  --color-border: var(--ml-color-border);
+  --color-input: var(--ml-color-input);
+  --color-ring: var(--ml-color-ring);
+  --color-overlay: var(--ml-color-overlay);
+  --color-success: var(--ml-color-success);
+  --color-warning: var(--ml-color-warning);
+  --color-error: var(--ml-color-error);
+
+  --font-sans: var(--ml-font-sans);
+  --font-mono: var(--ml-font-mono);
+  --font-accent: var(--ml-font-accent);
+
+  --radius-sm: var(--ml-radius-sm);
+  --radius-md: var(--ml-radius-md);
+  --radius-lg: var(--ml-radius-lg);
+  --radius-xl: var(--ml-radius-xl);
+  --radius-2xl: var(--ml-radius-2xl);
+  --radius-3xl: var(--ml-radius-3xl);
+
+  --shadow-sm: var(--ml-shadow-sm);
+  --shadow-md: var(--ml-shadow-md);
+  --shadow-lg: var(--ml-shadow-lg);
+  --shadow-xl: var(--ml-shadow-xl);
+
+  --tracking-eyebrow: var(--ml-letter-spacing-eyebrow);
+}

@@ -28,6 +28,11 @@ Or import only the pieces you want:
 @import "@magelab/design-system/utilities.css";
 ```
 
+Tailwind consumers can add the optional adapter layer:
+
+- Tailwind v4: `@import "@magelab/design-system/tailwind/theme.css";`
+- Tailwind v3 preset: `import preset from "@magelab/design-system/tailwind/preset";`
+
 Build generated tokens from the canonical source:
 
 ```bash
@@ -66,6 +71,33 @@ The package is meant to work with:
 
 Consumers should map framework components to these shared classes and tokens instead of sharing runtime component code across frameworks.
 
+## Tailwind Adapter
+
+Tailwind support is optional and additive.
+
+- It does not replace the core CSS bundle.
+- It maps Tailwind theme tokens onto the exported `--ml-*` variables.
+- It keeps the package usable in plain CSS, Svelte, and non-Tailwind stacks.
+
+Tailwind v4:
+
+```css
+@import "tailwindcss";
+@import "@magelab/design-system";
+@import "@magelab/design-system/tailwind/theme.css";
+```
+
+Tailwind v3:
+
+```js
+import preset from "@magelab/design-system/tailwind/preset";
+
+export default {
+  presets: [preset],
+  content: ["./src/**/*.{js,ts,jsx,tsx,svelte}"],
+};
+```
+
 ## Included Recipes
 
 - `ml-button`, `ml-button-primary`, `ml-button-secondary`, `ml-button-ghost`, `ml-button-glow`
@@ -94,6 +126,7 @@ This repo still does not attempt:
 ## Docs
 
 - `docs/consuming.md`
+- `docs/tailwind.md`
 - `docs/web-migration.md`
 - `docs/reference.md`
 - `examples/hero.html`

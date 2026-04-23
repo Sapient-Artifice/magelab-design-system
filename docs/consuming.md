@@ -93,6 +93,31 @@ To switch themes for a subtree:
 </div>
 ```
 
+## Tailwind
+
+If your app already uses Tailwind, keep the design system as the source of truth and layer the adapter on top.
+
+Tailwind v4:
+
+```css
+@import "tailwindcss";
+@import "@magelab/design-system";
+@import "@magelab/design-system/tailwind/theme.css";
+```
+
+Tailwind v3:
+
+```js
+import preset from "@magelab/design-system/tailwind/preset";
+
+export default {
+  presets: [preset],
+  content: ["./src/**/*.{js,ts,jsx,tsx,svelte}"],
+};
+```
+
+Use Tailwind for app-local layout when useful, but keep shared Magelab patterns on the exported `ml-*` classes.
+
 ## Custom Adapters
 
 If a framework needs richer components, keep them as local adapters around:

@@ -9,6 +9,7 @@ This package is extracted from the `web` repo's visual language, not from its ru
 - Focus and selection behavior
 - Brand motion utilities like the CTA glow and blink/pulse animations
 - Surface, card, button, hero, shell, and stack primitives
+- optional Tailwind token mapping compatible with `web`'s Tailwind-first workflow
 
 ## What Stayed Behind
 

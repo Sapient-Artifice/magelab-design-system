@@ -38,6 +38,13 @@ Theme switching is token-based, not class-based. Apply a `data-theme` attribute 
 - Feedback: `ml-callout*`, `ml-badge`, `ml-icon-chip`
 - Overlays: `ml-dialog-backdrop`, `ml-dialog-panel`, `ml-sheet-panel`
 
+## Tailwind Adapter
+
+- Tailwind v4 adapter: `tailwind/theme.css`
+- Tailwind v3 preset: `tailwind/preset.js`
+
+These adapters map Tailwind theme tokens to the design-system variables. They do not replace the core CSS recipes.
+
 ## Optional Assets And Effects
 
 - Assets: favicon/app icons, manifest metadata, and `assets/brand-mark.svg`
