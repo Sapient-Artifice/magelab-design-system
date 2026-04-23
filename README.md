@@ -62,6 +62,13 @@ npm run build:catalog
 npm run preview
 ```
 
+Run the standard validation commands:
+
+```bash
+npm test
+npm run validate
+```
+
 Run the publish-readiness check:
 
 ```bash

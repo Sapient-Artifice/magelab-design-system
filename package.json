@@ -48,6 +48,8 @@
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:catalog": "node scripts/build-catalog.mjs",
     "check": "node scripts/check-exports.mjs",
+    "validate": "npm run build:tokens && npm run check && npm run build:catalog",
+    "test": "npm run check",
     "release:check": "npm run build:tokens && npm run check && npm run build:catalog && npm pack --dry-run --cache ./.npm-cache",
     "dev": "node scripts/serve-static.mjs . 4173",
     "dev:tailwind-demo": "node scripts/serve-static.mjs . 4175",
