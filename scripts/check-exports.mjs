@@ -6,6 +6,7 @@ const files = [
   "src/base.css",
   "src/utilities.css",
   "src/tokens.json",
+  "tokens/tokens.source.json",
 ];
 
 for (const file of files) {

@@ -28,6 +28,12 @@ Or import only the pieces you want:
 @import "@magelab/design-system/utilities.css";
 ```
 
+Build generated tokens from the canonical source:
+
+```bash
+npm run build:tokens
+```
+
 ## Framework Notes
 
 The package is meant to work with:
@@ -55,6 +61,8 @@ This repo now covers:
 - richer semantic tokens for typography, layout, depth, and overlay layers
 - reusable CSS recipes for common product and marketing sections
 - copy-paste examples and a static visual catalog
+- a token pipeline with one canonical source file and generated CSS/JSON outputs
+- first themed variants with `dark` as default and `light` opt-in
 
 This repo still does not attempt:
 
@@ -69,3 +77,19 @@ This repo still does not attempt:
 - `docs/reference.md`
 - `examples/hero.html`
 - `catalog/index.html`
+
+## Themes
+
+The default theme is dark. Opt into the light theme by setting `data-theme="light"` on any container:
+
+```html
+<html data-theme="light">
+```
+
+or
+
+```html
+<section data-theme="light">
+```
+
+The same utility classes continue to work; only token values change.

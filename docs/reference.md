@@ -11,6 +11,21 @@
 - Motion: durations and easing semantics
 - Z-index: base, sticky, dropdown, overlay, and modal layers
 
+## Token Pipeline
+
+- Canonical source: `tokens/tokens.source.json`
+- Generated CSS variables: `src/tokens.css`
+- Generated JSON export: `src/tokens.json`
+
+The generated assets should not be hand-edited.
+
+## Themes
+
+- Default theme: `dark`
+- Alternate theme: `light`
+
+Theme switching is token-based, not class-based. Apply a `data-theme` attribute to any container and the existing recipe classes continue to work.
+
 ## Pattern Categories
 
 - Shells and layout: `ml-shell`, `ml-shell-md`, `ml-section`, `ml-section-lg`, `ml-grid-2`, `ml-grid-3`

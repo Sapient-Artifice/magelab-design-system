@@ -10,6 +10,7 @@
   ],
   "files": [
     "src",
+    "tokens",
     "README.md"
   ],
   "exports": {
@@ -18,9 +19,11 @@
     "./tokens.css": "./src/tokens.css",
     "./base.css": "./src/base.css",
     "./utilities.css": "./src/utilities.css",
-    "./tokens.json": "./src/tokens.json"
+    "./tokens.json": "./src/tokens.json",
+    "./tokens.source.json": "./tokens/tokens.source.json"
   },
   "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
     "check": "node scripts/check-exports.mjs"
   }
 }

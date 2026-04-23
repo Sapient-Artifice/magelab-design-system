@@ -231,6 +231,36 @@
           </div>
         </div>
       </section>
+
+      <section class="ml-section ml-section-border" data-theme="light">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Theme Variant</p>
+            <h2 class="ml-heading-section">The same classes can render in light mode through token overrides.</h2>
+            <p class="ml-text-body">This section uses `data-theme="light"` only. No recipe classes change.</p>
+          </div>
+
+          <div class="ml-grid-2" style="gap: 2rem;">
+            <article class="ml-surface-card ml-card">
+              <span class="ml-badge">Light Theme</span>
+              <h3 class="ml-heading-card">Token-driven theming</h3>
+              <p class="ml-text-muted">Buttons, surfaces, borders, and type all pick up the light token set automatically.</p>
+              <div class="ml-action-row" style="justify-content: flex-start;">
+                <a class="ml-button ml-button-primary" href="#main">Primary action</a>
+                <a class="ml-button ml-button-secondary" href="#main">Secondary action</a>
+              </div>
+            </article>
+
+            <article class="ml-surface-card ml-card">
+              <div class="ml-form-field">
+                <label class="ml-label" for="light-preview">Preview input</label>
+                <input class="ml-input" id="light-preview" type="text" placeholder="Theme-aware form control" />
+                <p class="ml-field-hint">The component classes are unchanged. Only the tokens differ.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

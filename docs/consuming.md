@@ -2,6 +2,23 @@
 
 The package exports plain CSS so each framework can keep its own component model.
 
+## Token Pipeline
+
+The canonical token source is:
+
+- `tokens/tokens.source.json`
+
+Generated outputs are:
+
+- `src/tokens.css`
+- `src/tokens.json`
+
+Regenerate them with:
+
+```bash
+npm run build:tokens
+```
+
 ## Next.js
 
 Import the bundle from a global stylesheet:
@@ -30,6 +47,14 @@ export function Hero() {
 }
 ```
 
+To switch themes for a route or layout:
+
+```tsx
+export default function Layout({ children }) {
+  return <div data-theme="light">{children}</div>;
+}
+```
+
 ## SvelteKit
 
 Import the same CSS in `app.css`:
@@ -52,6 +77,14 @@ Then consume it from Svelte markup:
     </div>
   </div>
 </section>
+```
+
+To switch themes for a subtree:
+
+```svelte
+<div data-theme="light">
+  <YourPage />
+</div>
 ```
 
 ## Custom Adapters
