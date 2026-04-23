@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Magelab Design System Catalog</title>
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body>
+    <a class="ml-skip-link" href="#main">Skip to content</a>
+
+    <header class="ml-nav">
+      <div class="ml-shell ml-nav-shell">
+        <a class="ml-nav-brand" href="#main">Magelab DS</a>
+        <nav class="ml-nav-links" aria-label="Catalog navigation">
+          <a class="ml-nav-link" href="#hero">Hero</a>
+          <a class="ml-nav-link" href="#features">Features</a>
+          <a class="ml-nav-link" href="#pricing">Pricing</a>
+          <a class="ml-nav-link" href="#forms">Forms</a>
+          <a class="ml-nav-link" href="#overlays">Overlays</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="ml-hero ml-spotlight">
+        <div class="ml-hero-content ml-stack-md">
+          <div class="ml-cluster" style="justify-content: center;">
+            <span class="ml-badge">Catalog</span>
+            <span class="ml-badge">CSS-First</span>
+          </div>
+          <p class="ml-eyebrow">AI Infrastructure You Actually Own</p>
+          <h1 class="ml-heading-display">A framework-agnostic design system for Magelab products.</h1>
+          <p class="ml-text-body">
+            Shared tokens, portable primitives, and reusable patterns for product surfaces built in
+            Next.js, SvelteKit, Vite, or plain HTML.
+          </p>
+          <div class="ml-action-row">
+            <a class="ml-button ml-button-primary ml-button-glow" href="#pricing">See pricing patterns</a>
+            <a class="ml-button ml-button-secondary" href="#forms">Inspect form recipes</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="ml-section ml-section-border">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Feature Patterns</p>
+            <h2 class="ml-heading-section">Structured sections for product marketing and application surfaces.</h2>
+            <p class="ml-text-body">
+              These recipes are intentionally declarative: they define the look and layout contract,
+              while each consuming framework owns behavior and state.
+            </p>
+          </div>
+
+          <div class="ml-feature-grid">
+            <article class="ml-feature-card">
+              <span class="ml-icon-chip">A</span>
+              <h3 class="ml-heading-card">Clear visual hierarchy</h3>
+              <p class="ml-text-muted">Eyebrows, display headings, section headings, and body styles share one token contract.</p>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Typography scale and rhythm are centralized.</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Color and spacing stay consistent across products.</span></li>
+              </ul>
+            </article>
+
+            <article class="ml-feature-card">
+              <span class="ml-icon-chip">B</span>
+              <h3 class="ml-heading-card">Framework independence</h3>
+              <p class="ml-text-muted">The system ships CSS and documented patterns, not coupled component runtimes.</p>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Next.js and SvelteKit can consume the same bundle.</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Behavior layers stay local to the product app.</span></li>
+              </ul>
+            </article>
+
+            <article class="ml-feature-card">
+              <span class="ml-icon-chip">C</span>
+              <h3 class="ml-heading-card">Portable product patterns</h3>
+              <p class="ml-text-muted">Pricing cards, form rows, callouts, shells, and modal contracts are ready to compose.</p>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Fast starting point for new Magelab interfaces.</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Less drift between repos over time.</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="ml-section ml-section-border">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Pricing Patterns</p>
+            <h2 class="ml-heading-section">Pricing blocks and comparison layouts without framework lock-in.</h2>
+            <p class="ml-text-body">Use these for product pages, subscriptions, hosted services, or enterprise offerings.</p>
+          </div>
+
+          <div class="ml-pricing-grid">
+            <article class="ml-pricing-card">
+              <div class="ml-price-block">
+                <p class="ml-eyebrow">Starter</p>
+                <div class="ml-price">
+                  <span class="ml-price-value">$0</span>
+                  <span class="ml-price-unit">forever</span>
+                </div>
+                <p class="ml-text-muted">For prototypes and local experiments.</p>
+              </div>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Core tokens and primitives</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Static catalog examples</span></li>
+              </ul>
+              <a class="ml-button ml-button-secondary" href="#forms">Inspect primitives</a>
+            </article>
+
+            <article class="ml-pricing-card ml-pricing-card-featured">
+              <div class="ml-price-block">
+                <p class="ml-eyebrow">Product Team</p>
+                <div class="ml-price">
+                  <span class="ml-price-value">$149</span>
+                  <span class="ml-price-unit">/month</span>
+                </div>
+                <p class="ml-text-muted">For teams shipping multiple Magelab surfaces.</p>
+              </div>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Shared product patterns</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Stronger adoption docs</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Portable form and overlay recipes</span></li>
+              </ul>
+              <a class="ml-button ml-button-primary ml-button-glow" href="#overlays">Review overlay contracts</a>
+            </article>
+
+            <article class="ml-pricing-card">
+              <div class="ml-price-block">
+                <p class="ml-eyebrow">Enterprise</p>
+                <div class="ml-price">
+                  <span class="ml-price-value">Custom</span>
+                </div>
+                <p class="ml-text-muted">For stricter governance, variants, and implementation support.</p>
+              </div>
+              <ul class="ml-feature-list">
+                <li><span class="ml-feature-bullet"></span><span>Design governance across products</span></li>
+                <li><span class="ml-feature-bullet"></span><span>Custom adapter guidance per framework</span></li>
+              </ul>
+              <a class="ml-button ml-button-secondary" href="#hero">Back to top</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="forms" class="ml-section ml-section-border">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Form Patterns</p>
+            <h2 class="ml-heading-section">Form primitives with labels, hints, errors, and structured rows.</h2>
+          </div>
+
+          <div class="ml-grid-2" style="background: rgba(255, 255, 255, 0.06); border-radius: 1.125rem; overflow: hidden;">
+            <div class="ml-pricing-card">
+              <div class="ml-stack-md">
+                <div class="ml-form-row">
+                  <div class="ml-form-field">
+                    <label class="ml-label" for="name">Name</label>
+                    <input class="ml-input" id="name" type="text" placeholder="Ada Lovelace" />
+                    <p class="ml-field-hint">Used in team-wide personalization.</p>
+                  </div>
+                  <div class="ml-form-field">
+                    <label class="ml-label" for="email">Email</label>
+                    <input class="ml-input" id="email" type="email" placeholder="ada@magelab.ai" />
+                    <p class="ml-field-hint">We only use this for operational communication.</p>
+                  </div>
+                </div>
+
+                <div class="ml-form-field">
+                  <label class="ml-label" for="project">Project context</label>
+                  <textarea class="ml-textarea" id="project" placeholder="Describe the product, deployment model, or design constraints."></textarea>
+                  <p class="ml-field-error">Example error copy: add enough detail for the design review.</p>
+                </div>
+
+                <div class="ml-cluster">
+                  <button class="ml-button ml-button-primary" type="button">Submit</button>
+                  <span class="ml-text-muted">Shortcut <span class="ml-kbd">Cmd</span> <span class="ml-kbd">Enter</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-pricing-card">
+              <div class="ml-stack-md">
+                <div class="ml-callout ml-callout-info">
+                  <p class="ml-heading-card">Info callout</p>
+                  <p class="ml-text-muted">Use for explanatory notes or implementation guidance tied to a section.</p>
+                </div>
+
+                <div class="ml-callout ml-callout-success">
+                  <p class="ml-heading-card">Success callout</p>
+                  <p class="ml-text-muted">Use when a workflow is complete or a configuration has been validated.</p>
+                </div>
+
+                <div class="ml-callout ml-callout-warning">
+                  <p class="ml-heading-card">Warning callout</p>
+                  <p class="ml-text-muted">Use when a decision has tradeoffs or a user action is hard to reverse.</p>
+                </div>
+
+                <div class="ml-callout ml-callout-error">
+                  <p class="ml-heading-card">Error callout</p>
+                  <p class="ml-text-muted">Use for destructive outcomes, failed validation, or unavailable dependencies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overlays" class="ml-section ml-section-border">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Overlay Contracts</p>
+            <h2 class="ml-heading-section">Dialog and sheet styling specs for framework-local behavior layers.</h2>
+            <p class="ml-text-body">These classes define the look and depth model. Each app still owns focus management, portals, and accessibility behavior.</p>
+          </div>
+
+          <div class="ml-grid-2" style="gap: 2rem;">
+            <div class="ml-surface-card ml-card">
+              <p class="ml-heading-card">Dialog spec</p>
+              <p class="ml-text-muted">Use `ml-dialog-backdrop` and `ml-dialog-panel` with your framework's modal implementation.</p>
+            </div>
+
+            <div class="ml-surface-card ml-card">
+              <p class="ml-heading-card">Sheet spec</p>
+              <p class="ml-text-muted">Use `ml-dialog-backdrop` and `ml-sheet-panel` for right-side drawers or workspace panels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

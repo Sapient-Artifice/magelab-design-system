@@ -5,6 +5,19 @@
   --ml-font-sans: Inter, "Segoe UI", sans-serif;
   --ml-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --ml-font-accent: Georgia, "Times New Roman", serif;
+  --ml-font-size-xs: 0.75rem;
+  --ml-font-size-sm: 0.875rem;
+  --ml-font-size-md: 1rem;
+  --ml-font-size-lg: 1.125rem;
+  --ml-font-size-xl: 1.25rem;
+  --ml-font-size-2xl: 1.5rem;
+  --ml-font-size-3xl: 2rem;
+  --ml-font-size-4xl: clamp(2.75rem, 6vw, 4rem);
+  --ml-line-height-tight: 1.1;
+  --ml-line-height-snug: 1.25;
+  --ml-line-height-body: 1.7;
+  --ml-letter-spacing-eyebrow: 0.15em;
+  --ml-letter-spacing-tight: -0.04em;
 
   /* Core palette */
   --ml-color-background: #09090b;
@@ -52,8 +65,14 @@
   --ml-color-accent-foreground: #e4e4e7;
   --ml-color-destructive: #ef4444;
   --ml-color-border: rgba(255, 255, 255, 0.08);
+  --ml-color-border-strong: rgba(255, 255, 255, 0.14);
   --ml-color-input: rgba(255, 255, 255, 0.1);
   --ml-color-ring: var(--ml-color-mage-500);
+  --ml-color-overlay: rgba(0, 0, 0, 0.66);
+  --ml-color-info: #60a5fa;
+  --ml-color-success-soft: rgba(16, 185, 129, 0.16);
+  --ml-color-warning-soft: rgba(245, 158, 11, 0.16);
+  --ml-color-error-soft: rgba(239, 68, 68, 0.16);
 
   /* Radius */
   --ml-radius-sm: 0.375rem;
@@ -76,17 +95,35 @@
   --ml-space-16: 4rem;
   --ml-space-20: 5rem;
   --ml-space-24: 6rem;
+  --ml-space-32: 8rem;
+
+  /* Layout */
+  --ml-container-sm: 48rem;
+  --ml-container-md: 64rem;
+  --ml-container-lg: 72rem;
+  --ml-container-xl: 80rem;
+  --ml-border-width-thin: 1px;
+  --ml-border-width-thick: 2px;
 
   /* Shadows */
   --ml-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.18);
   --ml-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.24);
   --ml-shadow-lg: 0 20px 60px -15px rgba(0, 0, 0, 0.8);
+  --ml-shadow-xl: 0 36px 120px -24px rgba(0, 0, 0, 0.9);
   --ml-shadow-glow: 0 0 32px 6px rgba(139, 92, 246, 0.3),
     0 0 64px 8px rgba(139, 92, 246, 0.15);
 
   /* Motion */
+  --ml-ease-standard: ease;
   --ml-ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
   --ml-duration-fast: 160ms;
   --ml-duration-base: 240ms;
   --ml-duration-slow: 400ms;
+
+  /* Z-index */
+  --ml-z-base: 1;
+  --ml-z-sticky: 20;
+  --ml-z-dropdown: 30;
+  --ml-z-overlay: 40;
+  --ml-z-modal: 50;
 }

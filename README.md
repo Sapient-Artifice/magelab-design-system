@@ -1,6 +1,6 @@
 # Magelab Design System
 
-Framework-agnostic design tokens and CSS primitives extracted from the `web` repo.
+Framework-agnostic design tokens, CSS primitives, and portable product patterns derived from the Magelab visual language.
 
 ## Scope
 
@@ -10,7 +10,7 @@ This package is intentionally CSS-first.
 - Base resets and accessibility defaults live in `src/base.css`
 - Reusable primitive and pattern classes live in `src/utilities.css`
 
-This is the light-lift layer. It does not try to ship React, Next.js, or Svelte components from one shared package.
+This package remains CSS-first. It does not try to ship one shared runtime component library across React, Svelte, and other frameworks.
 
 ## Usage
 
@@ -43,12 +43,29 @@ Consumers should map framework components to these shared classes and tokens ins
 
 - `ml-button`, `ml-button-primary`, `ml-button-secondary`, `ml-button-ghost`, `ml-button-glow`
 - `ml-surface-card`, `ml-surface-panel`, `ml-card`, `ml-card-dark`, `ml-card-light`
-- `ml-shell`, `ml-section`, `ml-section-lg`, `ml-grid-2`, `ml-stack-sm`, `ml-stack-md`, `ml-stack-lg`
-- `ml-eyebrow`, `ml-heading-display`, `ml-heading-section`, `ml-text-body`, `ml-text-muted`
+- `ml-shell`, `ml-shell-md`, `ml-section`, `ml-section-lg`, `ml-grid-2`, `ml-grid-3`, `ml-stack-sm`, `ml-stack-md`, `ml-stack-lg`
+- `ml-eyebrow`, `ml-heading-display`, `ml-heading-section`, `ml-heading-card`, `ml-text-body`, `ml-text-muted`
 - `ml-hero`, `ml-hero-content`, `ml-action-row`, `ml-badge`, `ml-icon-chip`, `ml-spotlight`
+- `ml-nav*`, `ml-section-header*`, `ml-feature-*`, `ml-pricing-*`, `ml-form-*`, `ml-callout*`, `ml-dialog-*`, `ml-sheet-panel`
+
+## Medium-Lift Scope
+
+This repo now covers:
+
+- richer semantic tokens for typography, layout, depth, and overlay layers
+- reusable CSS recipes for common product and marketing sections
+- copy-paste examples and a static visual catalog
+
+This repo still does not attempt:
+
+- framework-specific runtime component packages
+- behavior-sharing for dialogs, menus, carousels, or routing
+- a full token build pipeline
 
 ## Docs
 
 - `docs/consuming.md`
 - `docs/web-migration.md`
+- `docs/reference.md`
 - `examples/hero.html`
+- `catalog/index.html`
