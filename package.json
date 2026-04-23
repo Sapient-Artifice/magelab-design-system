@@ -1,10 +1,15 @@
 {
   "name": "@magelab/design-system",
   "version": "0.1.0",
-  "private": true,
   "description": "Framework-agnostic design tokens and CSS primitives for Magelab products.",
   "license": "UNLICENSED",
   "type": "module",
+  "keywords": [
+    "design-system",
+    "css",
+    "tokens",
+    "magelab"
+  ],
   "sideEffects": [
     "*.css"
   ],
@@ -13,7 +18,8 @@
     "effects",
     "src",
     "tokens",
-    "vendor",
+    "vendor/three.core.js",
+    "vendor/three.module.js",
     "README.md"
   ],
   "exports": {
@@ -39,6 +45,7 @@
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:catalog": "node scripts/build-catalog.mjs",
     "check": "node scripts/check-exports.mjs",
+    "release:check": "npm run build:tokens && npm run check && npm run build:catalog && npm pack --dry-run --cache ./.npm-cache",
     "dev": "node scripts/serve-static.mjs . 4173",
     "preview": "node scripts/serve-static.mjs dist 4174"
   }

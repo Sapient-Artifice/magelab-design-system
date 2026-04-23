@@ -49,6 +49,12 @@ npm run build:catalog
 npm run preview
 ```
 
+Run the publish-readiness check:
+
+```bash
+npm run release:check
+```
+
 ## Framework Notes
 
 The package is meant to work with:
