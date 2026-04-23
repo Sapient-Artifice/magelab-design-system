@@ -8,6 +8,12 @@ await mkdir(distRoot, { recursive: true });
 await cp(new URL("../catalog/", import.meta.url), new URL("../dist/catalog/", import.meta.url), {
   recursive: true,
 });
+await cp(new URL("../assets/", import.meta.url), new URL("../dist/assets/", import.meta.url), {
+  recursive: true,
+});
+await cp(new URL("../effects/", import.meta.url), new URL("../dist/effects/", import.meta.url), {
+  recursive: true,
+});
 await cp(new URL("../src/", import.meta.url), new URL("../dist/src/", import.meta.url), {
   recursive: true,
 });

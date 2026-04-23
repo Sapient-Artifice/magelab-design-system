@@ -114,3 +114,17 @@ or
 ```
 
 The same utility classes continue to work; only token values change.
+
+## Assets And Effects
+
+Brand assets are exported from:
+
+- `assets/favicon.svg`
+- `assets/brand-mark.svg`
+
+Optional visual effects are exported separately from the core CSS recipes:
+
+- `@magelab/design-system/effects.css`
+- `@magelab/design-system/effects`
+
+These effects are opt-in vanilla JS modules for decorative enhancement. They are intended for catalogs, hero sections, and other brand-heavy surfaces, not as mandatory runtime behavior for every consumer.

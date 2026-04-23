@@ -5,8 +5,12 @@ const files = [
   "src/tokens.css",
   "src/base.css",
   "src/utilities.css",
+  "src/effects.css",
   "src/tokens.json",
   "tokens/tokens.source.json",
+  "assets/favicon.svg",
+  "assets/brand-mark.svg",
+  "effects/index.js",
 ];
 
 for (const file of files) {

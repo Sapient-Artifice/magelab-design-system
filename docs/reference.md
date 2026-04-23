@@ -37,6 +37,14 @@ Theme switching is token-based, not class-based. Apply a `data-theme` attribute 
 - Feedback: `ml-callout*`, `ml-badge`, `ml-icon-chip`
 - Overlays: `ml-dialog-backdrop`, `ml-dialog-panel`, `ml-sheet-panel`
 
+## Optional Assets And Effects
+
+- Assets: `assets/favicon.svg`, `assets/brand-mark.svg`
+- Effect styles: `src/effects.css`
+- Effect modules: `effects/index.js`, `effects/floating-shapes.js`, `effects/pointer-tracer.js`
+
+These are optional enhancements. They should be imported intentionally rather than treated as part of the minimum design-system contract.
+
 ## Design Contract
 
 This package defines:

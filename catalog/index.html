@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Magelab Design System Catalog</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
     <link rel="stylesheet" href="../src/index.css" />
   </head>
   <body>
@@ -23,11 +24,12 @@
     </header>
 
     <main id="main">
-      <section id="hero" class="ml-hero ml-spotlight">
-        <div class="ml-hero-content ml-stack-md">
+      <section id="hero" class="ml-hero ml-spotlight ml-effects-demo" data-ml-floating-shapes data-ml-pointer-tracer data-ml-shape-count="11">
+        <div class="ml-hero-content ml-effects-content ml-stack-md">
           <div class="ml-cluster" style="justify-content: center;">
             <span class="ml-badge">Catalog</span>
             <span class="ml-badge">CSS-First</span>
+            <span class="ml-badge">Optional Effects</span>
           </div>
           <p class="ml-eyebrow">AI Infrastructure You Actually Own</p>
           <h1 class="ml-heading-display">A framework-agnostic design system for Magelab products.</h1>
@@ -39,6 +41,7 @@
             <a class="ml-button ml-button-primary ml-button-glow" href="#pricing">See pricing patterns</a>
             <a class="ml-button ml-button-secondary" href="#forms">Inspect form recipes</a>
           </div>
+          <p class="ml-text-muted">Move the pointer through this hero to preview the optional tracer and floating shape layer.</p>
         </div>
       </section>
 
@@ -261,6 +264,37 @@
           </div>
         </div>
       </section>
+
+      <section class="ml-section ml-section-border">
+        <div class="ml-shell ml-stack-lg">
+          <div class="ml-section-header">
+            <p class="ml-eyebrow">Optional Effects</p>
+            <h2 class="ml-heading-section">Brand assets and visual effects live outside the core component contract.</h2>
+            <p class="ml-text-body">These enhancements are opt-in. They are shipped as plain assets plus vanilla JS modules so any framework can layer them on without coupling the design system to React or Svelte runtime code.</p>
+          </div>
+
+          <div class="ml-grid-2" style="gap: 2rem;">
+            <article class="ml-surface-card ml-card">
+              <img src="../assets/brand-mark.svg" alt="Magelab brand mark" width="96" height="96" />
+              <h3 class="ml-heading-card">Brand assets</h3>
+              <p class="ml-text-muted">Use the exported SVG favicon and brand mark in catalogs, docs, app shells, and marketing surfaces.</p>
+            </article>
+
+            <article class="ml-surface-card ml-card ml-effects-demo" data-ml-floating-shapes data-ml-shape-count="7">
+              <div class="ml-effects-content ml-stack-sm">
+                <span class="ml-badge">Floating Shapes</span>
+                <h3 class="ml-heading-card">Optional motion layer</h3>
+                <p class="ml-text-muted">The floating shapes module is a plain DOM enhancement for decorative backgrounds.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+    <script type="module">
+      import { initCatalogEffects } from "../effects/index.js";
+
+      initCatalogEffects(document);
+    </script>
   </body>
 </html>

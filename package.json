@@ -9,16 +9,22 @@
     "*.css"
   ],
   "files": [
+    "assets",
+    "effects",
     "src",
     "tokens",
     "README.md"
   ],
   "exports": {
     ".": "./src/index.css",
+    "./assets/favicon.svg": "./assets/favicon.svg",
+    "./assets/brand-mark.svg": "./assets/brand-mark.svg",
     "./index.css": "./src/index.css",
     "./tokens.css": "./src/tokens.css",
     "./base.css": "./src/base.css",
     "./utilities.css": "./src/utilities.css",
+    "./effects.css": "./src/effects.css",
+    "./effects": "./effects/index.js",
     "./tokens.json": "./src/tokens.json",
     "./tokens.source.json": "./tokens/tokens.source.json"
   },

@@ -96,3 +96,17 @@ If a framework needs richer components, keep them as local adapters around:
 - shared accessibility and motion rules
 
 Do not try to force shared runtime component code across incompatible frameworks.
+
+## Optional Effects
+
+For brand-heavy surfaces, import the optional effects layer:
+
+```css
+@import "@magelab/design-system/effects.css";
+```
+
+```js
+import { initFloatingShapes, initPointerTracer } from "@magelab/design-system/effects";
+```
+
+Apply them only where they add value, such as hero sections or catalogs. Respect reduced-motion preferences and avoid making them a hard dependency for core product flows.
