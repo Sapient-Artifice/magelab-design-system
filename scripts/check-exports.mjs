@@ -14,6 +14,8 @@ const files = [
   "assets/favicon-16x16.png",
   "assets/brand-mark.svg",
   "effects/index.js",
+  "vendor/three.core.js",
+  "vendor/three.module.js",
 ];
 
 for (const file of files) {

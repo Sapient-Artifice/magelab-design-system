@@ -14,6 +14,9 @@ await cp(new URL("../assets/", import.meta.url), new URL("../dist/assets/", impo
 await cp(new URL("../effects/", import.meta.url), new URL("../dist/effects/", import.meta.url), {
   recursive: true,
 });
+await cp(new URL("../vendor/", import.meta.url), new URL("../dist/vendor/", import.meta.url), {
+  recursive: true,
+});
 await cp(new URL("../src/", import.meta.url), new URL("../dist/src/", import.meta.url), {
   recursive: true,
 });

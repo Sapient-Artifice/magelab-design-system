@@ -13,6 +13,7 @@
     "effects",
     "src",
     "tokens",
+    "vendor",
     "README.md"
   ],
   "exports": {
@@ -29,7 +30,9 @@
     "./effects.css": "./src/effects.css",
     "./effects": "./effects/index.js",
     "./tokens.json": "./src/tokens.json",
-    "./tokens.source.json": "./tokens/tokens.source.json"
+    "./tokens.source.json": "./tokens/tokens.source.json",
+    "./vendor/three.core.js": "./vendor/three.core.js",
+    "./vendor/three.module.js": "./vendor/three.module.js"
   },
   "scripts": {
     "build:tokens": "node scripts/build-tokens.mjs",
