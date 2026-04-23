@@ -18,6 +18,7 @@
   ],
   "exports": {
     ".": "./src/index.css",
+    "./assets/*": "./assets/*",
     "./assets/favicon.ico": "./assets/favicon.ico",
     "./assets/favicon.png": "./assets/favicon.png",
     "./assets/favicon-32x32.png": "./assets/favicon-32x32.png",

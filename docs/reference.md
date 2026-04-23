@@ -31,6 +31,7 @@ Theme switching is token-based, not class-based. Apply a `data-theme` attribute 
 - Shells and layout: `ml-shell`, `ml-shell-md`, `ml-section`, `ml-section-lg`, `ml-grid-2`, `ml-grid-3`
 - Typography: `ml-eyebrow`, `ml-heading-display`, `ml-heading-section`, `ml-heading-card`, `ml-text-body`, `ml-text-muted`
 - Buttons and surfaces: `ml-button*`, `ml-surface-card`, `ml-surface-panel`, `ml-card*`
+- Interactive affordances: `ml-surface-interactive`, `ml-link-accent`, `ml-link-arrow`
 - Navigation: `ml-nav`, `ml-nav-shell`, `ml-nav-brand`, `ml-nav-links`, `ml-nav-link`
 - Features and pricing: `ml-feature-grid`, `ml-feature-card`, `ml-feature-list`, `ml-pricing-grid`, `ml-pricing-card`, `ml-price*`
 - Forms: `ml-form-field`, `ml-form-row`, `ml-label`, `ml-input`, `ml-textarea`, `ml-field-hint`, `ml-field-error`, `ml-kbd`
@@ -39,7 +40,7 @@ Theme switching is token-based, not class-based. Apply a `data-theme` attribute 
 
 ## Optional Assets And Effects
 
-- Assets: `assets/favicon.svg`, `assets/brand-mark.svg`
+- Assets: favicon/app icons, manifest metadata, and `assets/brand-mark.svg`
 - Effect styles: `src/effects.css`
 - Effect modules: `effects/index.js`, `effects/floating-shapes.js`, `effects/pointer-tracer.js`
 

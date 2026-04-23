@@ -83,7 +83,7 @@ This repo still does not attempt:
 
 - framework-specific runtime component packages
 - behavior-sharing for dialogs, menus, carousels, or routing
-- a full token build pipeline
+- design-tool synchronization or a multi-target token compiler beyond CSS and JSON
 
 ## Docs
 
@@ -123,6 +123,12 @@ Brand assets are exported from:
 - `assets/favicon.png`
 - `assets/favicon-32x32.png`
 - `assets/favicon-16x16.png`
+- `assets/favicon-96x96.png`
+- `assets/apple-icon.png`
+- `assets/apple-icon-180x180.png`
+- `assets/icon-512.webp`
+- `assets/manifest.json`
+- `assets/browserconfig.xml`
 - `assets/brand-mark.svg`
 
 Optional visual effects are exported separately from the core CSS recipes:

@@ -22,9 +22,11 @@ This package is extracted from the `web` repo's visual language, not from its ru
 Use this package when the original `web` component mainly contributed styling.
 
 - `web` `cta-glow` -> `ml-button-glow`
+- `web` accent text links and arrow nudges -> `ml-link-accent`, `ml-link-arrow`
 - `web` section shell patterns -> `ml-section`, `ml-shell`, `ml-section-border`
 - `web` heading and eyebrow treatments -> `ml-heading-display`, `ml-heading-section`, `ml-eyebrow`
 - `web` card shells -> `ml-surface-card`, `ml-card`, `ml-card-dark`, `ml-card-light`
+- `web` hoverable marketing cards -> `ml-surface-interactive`
 - `web` text color patterns -> `ml-text-body`, `ml-text-muted`
 
 When the original component mixed styling with runtime behavior, rebuild the behavior inside the target framework and keep the look aligned with these classes and tokens.

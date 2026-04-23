@@ -41,6 +41,9 @@ export function Hero() {
           <a className="ml-button ml-button-primary ml-button-glow" href="/download">Download Mage</a>
           <a className="ml-button ml-button-secondary" href="/gateway">Try the Gateway</a>
         </div>
+        <a className="ml-link-accent ml-link-arrow" href="/docs">
+          Read the docs <span data-ml-arrow aria-hidden="true">&rarr;</span>
+        </a>
       </div>
     </section>
   );
@@ -75,6 +78,9 @@ Then consume it from Svelte markup:
       <a class="ml-button ml-button-primary ml-button-glow" href="/download">Download Mage</a>
       <a class="ml-button ml-button-secondary" href="/gateway">Try the Gateway</a>
     </div>
+    <a class="ml-link-accent ml-link-arrow" href="/docs">
+      Read the docs <span data-ml-arrow aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>
 ```
@@ -96,6 +102,8 @@ If a framework needs richer components, keep them as local adapters around:
 - shared accessibility and motion rules
 
 Do not try to force shared runtime component code across incompatible frameworks.
+
+For interactive shells such as cards or pricing plans, add `ml-surface-interactive` when the container should visibly respond to hover or focus.
 
 ## Optional Effects
 

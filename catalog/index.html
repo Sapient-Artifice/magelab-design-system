@@ -4,9 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Magelab Design System Catalog</title>
+    <meta name="theme-color" content="#09090b" />
+    <meta name="msapplication-config" content="../assets/browserconfig.xml" />
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon-96x96.png" />
+    <link rel="apple-touch-icon" href="../assets/apple-icon.png" />
+    <link rel="manifest" href="../assets/manifest.json" />
     <link rel="stylesheet" href="../src/index.css" />
   </head>
   <body>
@@ -38,7 +43,10 @@
             <a class="ml-button ml-button-primary ml-button-glow" href="#pricing">See pricing patterns</a>
             <a class="ml-button ml-button-secondary" href="#forms">Inspect form recipes</a>
           </div>
-          <a class="ml-hero-gateway-link" href="#features">Review the system details &rarr;</a>
+          <a class="ml-hero-gateway-link ml-link-accent ml-link-arrow" href="#features">
+            Review the system details
+            <span data-ml-arrow aria-hidden="true">&rarr;</span>
+          </a>
         </div>
         <div class="ml-effects-ready-badge">effects active</div>
       </section>
@@ -55,7 +63,7 @@
           </div>
 
           <div class="ml-feature-grid">
-            <article class="ml-feature-card">
+            <article class="ml-feature-card ml-surface-interactive">
               <span class="ml-icon-chip">A</span>
               <h3 class="ml-heading-card">Clear visual hierarchy</h3>
               <p class="ml-text-muted">Eyebrows, display headings, section headings, and body styles share one token contract.</p>
@@ -65,7 +73,7 @@
               </ul>
             </article>
 
-            <article class="ml-feature-card">
+            <article class="ml-feature-card ml-surface-interactive">
               <span class="ml-icon-chip">B</span>
               <h3 class="ml-heading-card">Framework independence</h3>
               <p class="ml-text-muted">The system ships CSS and documented patterns, not coupled component runtimes.</p>
@@ -75,7 +83,7 @@
               </ul>
             </article>
 
-            <article class="ml-feature-card">
+            <article class="ml-feature-card ml-surface-interactive">
               <span class="ml-icon-chip">C</span>
               <h3 class="ml-heading-card">Portable product patterns</h3>
               <p class="ml-text-muted">Pricing cards, form rows, callouts, shells, and modal contracts are ready to compose.</p>
@@ -97,7 +105,7 @@
           </div>
 
           <div class="ml-pricing-grid">
-            <article class="ml-pricing-card">
+            <article class="ml-pricing-card ml-surface-interactive">
               <div class="ml-price-block">
                 <p class="ml-eyebrow">Starter</p>
                 <div class="ml-price">
@@ -113,7 +121,7 @@
               <a class="ml-button ml-button-secondary" href="#forms">Inspect primitives</a>
             </article>
 
-            <article class="ml-pricing-card ml-pricing-card-featured">
+            <article class="ml-pricing-card ml-pricing-card-featured ml-surface-interactive">
               <div class="ml-price-block">
                 <p class="ml-eyebrow">Product Team</p>
                 <div class="ml-price">
@@ -130,7 +138,7 @@
               <a class="ml-button ml-button-primary ml-button-glow" href="#overlays">Review overlay contracts</a>
             </article>
 
-            <article class="ml-pricing-card">
+            <article class="ml-pricing-card ml-surface-interactive">
               <div class="ml-price-block">
                 <p class="ml-eyebrow">Enterprise</p>
                 <div class="ml-price">
@@ -220,12 +228,12 @@
           </div>
 
           <div class="ml-grid-2" style="gap: 2rem;">
-            <div class="ml-surface-card ml-card">
+            <div class="ml-surface-card ml-card ml-surface-interactive">
               <p class="ml-heading-card">Dialog spec</p>
               <p class="ml-text-muted">Use `ml-dialog-backdrop` and `ml-dialog-panel` with your framework's modal implementation.</p>
             </div>
 
-            <div class="ml-surface-card ml-card">
+            <div class="ml-surface-card ml-card ml-surface-interactive">
               <p class="ml-heading-card">Sheet spec</p>
               <p class="ml-text-muted">Use `ml-dialog-backdrop` and `ml-sheet-panel` for right-side drawers or workspace panels.</p>
             </div>
