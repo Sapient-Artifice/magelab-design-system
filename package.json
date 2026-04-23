@@ -24,6 +24,9 @@
   },
   "scripts": {
     "build:tokens": "node scripts/build-tokens.mjs",
-    "check": "node scripts/check-exports.mjs"
+    "build:catalog": "node scripts/build-catalog.mjs",
+    "check": "node scripts/check-exports.mjs",
+    "dev": "node scripts/serve-static.mjs . 4173",
+    "preview": "node scripts/serve-static.mjs dist 4174"
   }
 }

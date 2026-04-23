@@ -34,6 +34,21 @@ Build generated tokens from the canonical source:
 npm run build:tokens
 ```
 
+Run the visual review workflow:
+
+```bash
+npm run dev
+```
+
+Then open `/catalog/` on the local server.
+
+Build a shareable static review output:
+
+```bash
+npm run build:catalog
+npm run preview
+```
+
 ## Framework Notes
 
 The package is meant to work with:
@@ -77,6 +92,12 @@ This repo still does not attempt:
 - `docs/reference.md`
 - `examples/hero.html`
 - `catalog/index.html`
+
+## Catalog Workflow
+
+- `npm run dev` serves the repo locally for source review
+- `npm run build:catalog` creates `dist/` with the catalog, docs, and generated CSS
+- `npm run preview` serves `dist/` for post-build review
 
 ## Themes
 
