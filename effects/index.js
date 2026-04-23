@@ -13,9 +13,11 @@ export function initCatalogEffects(root = document) {
 
   root.querySelectorAll("[data-ml-dot-grid]").forEach((node) => {
     node.dataset.effectsLoaded = "true";
+    const force = node.hasAttribute("data-ml-force-effects");
     const effect = initDotGrid(node, {
       spacing: Number(node.getAttribute("data-ml-dot-spacing") || 18),
       dotRadius: Number(node.getAttribute("data-ml-dot-radius") || 1.35),
+      force,
     });
     if (effect) {
       cleanup.push(effect);
@@ -24,8 +26,10 @@ export function initCatalogEffects(root = document) {
 
   root.querySelectorAll("[data-ml-floating-shapes]").forEach((node) => {
     node.dataset.effectsLoaded = "true";
+    const force = node.hasAttribute("data-ml-force-effects");
     const effect = initFloatingShapes(node, {
       shapeCount: Number(node.getAttribute("data-ml-shape-count") || 9),
+      force,
     });
     if (effect) {
       cleanup.push(effect);
@@ -34,7 +38,8 @@ export function initCatalogEffects(root = document) {
 
   root.querySelectorAll("[data-ml-pointer-tracer]").forEach((node) => {
     node.dataset.effectsLoaded = "true";
-    const effect = initPointerTracer(node);
+    const force = node.hasAttribute("data-ml-force-effects");
+    const effect = initPointerTracer(node, { force });
     if (effect) {
       cleanup.push(effect);
     }

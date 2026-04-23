@@ -9,7 +9,10 @@ export function initFloatingShapes(host, options = {}) {
     return null;
   }
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (
+    !options.force &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
     return null;
   }
 

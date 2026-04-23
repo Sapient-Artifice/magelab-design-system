@@ -1,9 +1,12 @@
-export function initPointerTracer(host) {
+export function initPointerTracer(host, options = {}) {
   if (!host || host.dataset.effectsPointerTracer === "ready") {
     return null;
   }
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (
+    !options.force &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
     return null;
   }
 
