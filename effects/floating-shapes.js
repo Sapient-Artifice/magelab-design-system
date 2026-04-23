@@ -46,6 +46,36 @@ function randomShape() {
   return new THREE.DodecahedronGeometry(0.55, 0);
 }
 
+function geometryByType(type) {
+  switch (type) {
+    case "box":
+      return new THREE.BoxGeometry(1, 1, 1);
+    case "octa":
+      return new THREE.OctahedronGeometry(0.65);
+    case "tetra":
+      return new THREE.TetrahedronGeometry(0.7);
+    case "icosa":
+      return new THREE.IcosahedronGeometry(0.6, 0);
+    case "dodeca":
+      return new THREE.DodecahedronGeometry(0.55, 0);
+    default:
+      return randomShape();
+  }
+}
+
+const AUTHORED_LAYOUT = [
+  { type: "box", x: -6.8, y: 2.8, z: -3.3, scale: 1.55, rot: [0.2, 0.5, -0.1] },
+  { type: "tetra", x: 1.5, y: 4.4, z: -2.2, scale: 1.1, rot: [0.6, 1.1, 0.4] },
+  { type: "box", x: 3.4, y: 5.0, z: -3.5, scale: 1.45, rot: [0.3, 0.1, 0.8] },
+  { type: "box", x: 6.2, y: 4.6, z: -3.8, scale: 1.35, rot: [0.4, 0.7, 0.2] },
+  { type: "dodeca", x: -0.7, y: 0.6, z: -2.0, scale: 0.86, rot: [0.2, 0.9, 0.3] },
+  { type: "icosa", x: 5.1, y: -0.8, z: -2.7, scale: 1.05, rot: [0.7, 0.3, 0.9] },
+  { type: "box", x: 0.9, y: -3.6, z: -3.0, scale: 1.25, rot: [0.5, 0.2, 0.2] },
+  { type: "dodeca", x: 3.5, y: -2.8, z: -2.4, scale: 0.72, rot: [0.4, 1.0, 0.5] },
+  { type: "box", x: 7.0, y: -3.2, z: -2.6, scale: 1.08, rot: [0.9, 0.4, 0.1] },
+  { type: "box", x: 7.9, y: -5.2, z: -3.9, scale: 1.9, rot: [0.5, 0.8, 0.25] },
+];
+
 export function initFloatingShapes(host, options = {}) {
   if (!host || host.dataset.effectsFloatingShapes === "ready") {
     return null;
@@ -127,24 +157,24 @@ export function initFloatingShapes(host, options = {}) {
 
   const groups = [];
   const configs = [];
-  const spread = { x: 7, y: 4 };
+  const layout = AUTHORED_LAYOUT.slice(0, count);
 
-  for (let i = 0; i < count; i += 1) {
-    const geometry = randomShape();
+  for (let i = 0; i < layout.length; i += 1) {
+    const preset = layout[i];
+    const geometry = geometryByType(preset.type);
     const group = makeShapeGroup(geometry);
-
-    const x = (Math.random() - 0.5) * spread.x * 2;
-    const y = (Math.random() - 0.5) * spread.y * 2;
-    const z = -1 + Math.random() * -3;
+    const x = preset.x;
+    const y = preset.y;
+    const z = preset.z;
 
     group.position.set(x, y, z);
     group.rotation.set(
-      Math.random() * Math.PI * 2,
-      Math.random() * Math.PI * 2,
-      Math.random() * Math.PI * 2,
+      preset.rot[0],
+      preset.rot[1],
+      preset.rot[2],
     );
 
-    const s = 0.5 + Math.random() * 1.1;
+    const s = preset.scale;
     group.scale.setScalar(s);
     group.userData.baseScale = s;
 
@@ -157,12 +187,12 @@ export function initFloatingShapes(host, options = {}) {
       y,
       z,
       baseRotSpeed: {
-        x: (Math.random() - 0.5) * 0.0015,
-        y: (Math.random() - 0.5) * 0.0025,
-        z: (Math.random() - 0.5) * 0.0012,
+        x: (Math.random() - 0.5) * 0.0012,
+        y: (Math.random() - 0.5) * 0.002,
+        z: (Math.random() - 0.5) * 0.001,
       },
-      floatSpeed: 0.12 + Math.random() * 0.18,
-      floatAmp: 0.08 + Math.random() * 0.12,
+      floatSpeed: 0.1 + Math.random() * 0.12,
+      floatAmp: 0.06 + Math.random() * 0.08,
       floatOffset: Math.random() * Math.PI * 2,
       life: Math.random(),
       lifeSpeed: 0.0008 + Math.random() * 0.001,
@@ -198,17 +228,6 @@ export function initFloatingShapes(host, options = {}) {
         if (cfg.life <= 0) {
           cfg.life = 0;
           cfg.fadeIn = true;
-          cfg.x = (Math.random() - 0.5) * spread.x * 2;
-          cfg.y = (Math.random() - 0.5) * spread.y * 2;
-          cfg.z = -1 + Math.random() * -3;
-          const s = 0.5 + Math.random() * 1.1;
-          group.scale.setScalar(s);
-          group.userData.baseScale = s;
-          cfg.baseRotSpeed = {
-            x: (Math.random() - 0.5) * 0.0015,
-            y: (Math.random() - 0.5) * 0.0025,
-            z: (Math.random() - 0.5) * 0.0012,
-          };
           cfg.cursorGlow = 0;
         }
       }

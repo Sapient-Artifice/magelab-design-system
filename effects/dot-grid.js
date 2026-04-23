@@ -246,7 +246,11 @@ export function initDotGrid(host, options = {}) {
 
         maxGlow = Math.min(1, maxGlow);
 
-        const alpha = 0.04 + maxGlow * 0.78;
+        if (maxGlow <= 0.001) {
+          continue;
+        }
+
+        const alpha = maxGlow * 0.78;
         const r = Math.round(GR * maxGlow + BASE_R * (1 - maxGlow));
         const g = Math.round(GG * maxGlow + BASE_G * (1 - maxGlow));
         const b = Math.round(GB * maxGlow + BASE_B * (1 - maxGlow));
