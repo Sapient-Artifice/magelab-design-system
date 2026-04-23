@@ -63,10 +63,10 @@ Consumers should map framework components to these shared classes and tokens ins
 ## Included Recipes
 
 - `ml-button`, `ml-button-primary`, `ml-button-secondary`, `ml-button-ghost`, `ml-button-glow`
-- `ml-surface-card`, `ml-surface-panel`, `ml-card`, `ml-card-dark`, `ml-card-light`
+- `ml-surface-card`, `ml-surface-panel`, `ml-surface-soft`, `ml-surface-dark-subtle`, `ml-surface-light-subtle`, `ml-card`, `ml-card-dark`, `ml-card-light`
 - `ml-shell`, `ml-shell-md`, `ml-section`, `ml-section-lg`, `ml-grid-2`, `ml-grid-3`, `ml-stack-sm`, `ml-stack-md`, `ml-stack-lg`
 - `ml-eyebrow`, `ml-heading-display`, `ml-heading-section`, `ml-heading-card`, `ml-text-body`, `ml-text-muted`
-- `ml-hero`, `ml-hero-content`, `ml-action-row`, `ml-badge`, `ml-icon-chip`, `ml-spotlight`
+- `ml-hero`, `ml-hero-content`, `ml-action-row`, `ml-badge`, `ml-icon-chip`, `ml-card-hover-title`, `ml-spotlight`
 - `ml-nav*`, `ml-section-header*`, `ml-feature-*`, `ml-pricing-*`, `ml-form-*`, `ml-callout*`, `ml-dialog-*`, `ml-sheet-panel`
 
 ## Medium-Lift Scope

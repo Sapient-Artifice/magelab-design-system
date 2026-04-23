@@ -103,7 +103,7 @@ If a framework needs richer components, keep them as local adapters around:
 
 Do not try to force shared runtime component code across incompatible frameworks.
 
-For interactive shells such as cards or pricing plans, add `ml-surface-interactive` when the container should visibly respond to hover or focus.
+For interactive shells such as cards or pricing plans, pair `ml-surface-interactive` with a surface recipe such as `ml-surface-dark-subtle` or `ml-surface-light-subtle`. Add `ml-card-hover-title` to headings that should pick up the softer `web`-style accent shift on hover.
 
 ## Optional Effects
 
