@@ -1,4 +1,4 @@
-const SHAPE_TYPES = ["circle", "square", "diamond"];
+const SHAPE_TYPES = ["triangle", "diamond", "hex", "quad"];
 
 function randomBetween(min, max) {
   return min + Math.random() * (max - min);
@@ -13,20 +13,20 @@ export function initFloatingShapes(host, options = {}) {
     return null;
   }
 
-  const shapeCount = options.shapeCount ?? 9;
+  const shapeCount = options.shapeCount ?? 10;
   const layer = document.createElement("div");
   layer.className = "ml-effects-layer ml-floating-shapes-layer";
 
   const shapes = Array.from({ length: shapeCount }, (_, index) => {
     const el = document.createElement("span");
-    const size = randomBetween(72, 156);
-    const x = randomBetween(6, 86);
-    const y = randomBetween(8, 78);
-    const driftX = randomBetween(-18, 18);
-    const driftY = randomBetween(-14, 14);
-    const rotation = randomBetween(-24, 24);
+    const size = randomBetween(120, 280);
+    const x = randomBetween(-4, 92);
+    const y = randomBetween(-8, 82);
+    const driftX = randomBetween(-26, 26);
+    const driftY = randomBetween(-18, 18);
+    const rotation = randomBetween(-18, 18);
     const delay = index * 220;
-    const duration = randomBetween(9000, 16000);
+    const duration = randomBetween(12000, 22000);
 
     el.className = "ml-floating-shape";
     el.dataset.shape = SHAPE_TYPES[index % SHAPE_TYPES.length];
@@ -38,7 +38,14 @@ export function initFloatingShapes(host, options = {}) {
 
     layer.appendChild(el);
 
-    return { el, driftX, driftY, rotation, delay, duration };
+    return {
+      el,
+      driftX,
+      driftY,
+      rotation,
+      delay,
+      duration,
+    };
   });
 
   let rafId = 0;
@@ -64,8 +71,8 @@ export function initFloatingShapes(host, options = {}) {
         : 0;
       const tx = wave * shape.driftX;
       const ty = sway * shape.driftY;
-      const scale = 1 - pointerInfluence * 0.08;
-      const opacity = 0.18 + ((wave + 1) / 2) * 0.22;
+      const scale = 1 - pointerInfluence * 0.1;
+      const opacity = 0.22 + ((wave + 1) / 2) * 0.24;
 
       shape.el.style.opacity = `${opacity}`;
       shape.el.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${shape.rotation + wave * 12}deg) scale(${scale})`;
