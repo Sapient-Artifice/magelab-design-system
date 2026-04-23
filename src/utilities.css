@@ -234,6 +234,14 @@
   margin-inline: auto;
 }
 
+.ml-section {
+  padding: 6rem 1.5rem;
+}
+
+.ml-section-lg {
+  padding: 7.5rem 1.5rem;
+}
+
 .ml-grid-2 {
   display: grid;
   gap: 1px;
@@ -261,6 +269,38 @@
   width: min(100%, 64rem);
   margin-inline: auto;
   text-align: center;
+}
+
+.ml-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ml-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--ml-color-gray-300);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ml-icon-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--ml-radius-lg);
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--ml-color-mage-400);
 }
 
 .ml-spotlight {
