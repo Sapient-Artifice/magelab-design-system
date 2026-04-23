@@ -22,6 +22,45 @@
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(9, 9, 11, 0) 38%);
 }
 
+.ml-hero-gateway {
+  min-height: 80vh;
+  padding: 8rem 1.5rem 6rem;
+}
+
+.ml-hero-gateway-content {
+  width: min(100%, 64rem);
+  max-width: 64rem;
+  text-align: center;
+}
+
+.ml-hero-gateway-heading {
+  max-width: 60rem;
+  margin-inline: auto;
+  font-size: clamp(3rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+.ml-hero-gateway-copy {
+  max-width: 38rem;
+  margin-inline: auto;
+}
+
+.ml-hero-gateway-actions {
+  align-items: center;
+}
+
+.ml-hero-gateway-link {
+  display: inline-block;
+  color: var(--ml-color-gray-400);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color var(--ml-duration-fast) var(--ml-ease-emphasized);
+}
+
+.ml-hero-gateway-link:hover {
+  color: var(--ml-color-foreground);
+}
+
 .ml-dot-grid-layer {
   opacity: 0.92;
   mix-blend-mode: screen;
