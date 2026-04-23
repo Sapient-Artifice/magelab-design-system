@@ -119,7 +119,10 @@ The same utility classes continue to work; only token values change.
 
 Brand assets are exported from:
 
-- `assets/favicon.svg`
+- `assets/favicon.ico`
+- `assets/favicon.png`
+- `assets/favicon-32x32.png`
+- `assets/favicon-16x16.png`
 - `assets/brand-mark.svg`
 
 Optional visual effects are exported separately from the core CSS recipes:

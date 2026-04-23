@@ -8,7 +8,10 @@ const files = [
   "src/effects.css",
   "src/tokens.json",
   "tokens/tokens.source.json",
-  "assets/favicon.svg",
+  "assets/favicon.ico",
+  "assets/favicon.png",
+  "assets/favicon-32x32.png",
+  "assets/favicon-16x16.png",
   "assets/brand-mark.svg",
   "effects/index.js",
 ];

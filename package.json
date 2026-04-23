@@ -17,7 +17,10 @@
   ],
   "exports": {
     ".": "./src/index.css",
-    "./assets/favicon.svg": "./assets/favicon.svg",
+    "./assets/favicon.ico": "./assets/favicon.ico",
+    "./assets/favicon.png": "./assets/favicon.png",
+    "./assets/favicon-32x32.png": "./assets/favicon-32x32.png",
+    "./assets/favicon-16x16.png": "./assets/favicon-16x16.png",
     "./assets/brand-mark.svg": "./assets/brand-mark.svg",
     "./index.css": "./src/index.css",
     "./tokens.css": "./src/tokens.css",
